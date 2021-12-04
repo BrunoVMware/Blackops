@@ -1,0 +1,8 @@
+#starts procdump to capture a dump of the chrome process
+To capture a different process replace the executable
+name, rename the dump file to whatever makes sense to you.
+
+mount https://live.sysinternals.com which contains procdump.exe
+net use Z: https://live.sysinternals.com
+Z:\procdump.exe -accepteula -ma chrome.exe chrome.dmp
+
